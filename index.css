@@ -1,0 +1,27 @@
+li.item {	
+	display: inline-block;
+	width: 200px;
+	height: 265px;
+	border: solid 1px grey;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	padding-left:0px;
+	box-shadow: 5px 5px 10px -5px grey;
+}
+div.image img {
+	display: block;
+	width: 200px;
+	height: 200px;
+	border: 0px solid;	
+}
+div.title {
+	font-size: 20px;
+	text-align: center;
+	color: #06266F;
+	height: 40px;
+	margin: 0px 5px;
+}
+a.title
+{
+	text-decoration:none;
+}

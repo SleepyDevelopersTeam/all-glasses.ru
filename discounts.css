@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.discounts {
+	list-style: none;
+	width: 950px;
+	margin: 0px auto; margin-bottom: 30px;
+	padding: 0px;
+}
+.discounts li {
+	border: 1px solid #1240AB;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
+	padding: 5px;
+	margin: 10px;
+	
+	min-height: 50px;
+}
+
+.discounts img {
+	width: 200px;
+	height: 50px;
+	float: left;
+}
+
+.discounts div {
+	margin-left: 210px
+}

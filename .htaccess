@@ -1,0 +1,4 @@
+AddDefaultCharset UTF-8
+<FilesMatch "\.(inc|php|php3|php4|php5|php6|phtml|phps)$"> # PHP Version 55
+AddHandler x-httpd-php55 .inc .php .php3 .php4 .php5 .php6 .phtml # PHP Version 55
+</FilesMatch> # PHP Version 55

@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/****************************
+ * Item page unique content *
+ ****************************/
+ 
+#wrapper h2 {
+	color: #1240AB;
+}
+
+div.image {
+	display: inline-block;
+	width: 500px;
+	height: 500px;
+	margin: 0px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.35);
+	
+	background: url(img/goods/large/0.png);
+}
+
+div.info {
+	display: inline-block;
+	width: 480px;
+	margin: 0px;
+	vertical-align: top;
+}
+
+div.info table, div.info td {
+	border: 1px dashed #ddd;
+	border-collapse: collapse;
+}
+div.info table{
+	width: 460px;
+	margin: 0px auto;
+}
+div.info td {
+	padding: 5px;
+}
+div.info td.property {
+	font-weight: bold;
+	padding-right: 10px;
+	text-align: right;
+	vertical-align: top;
+}
+
+/***********
+ * Actions *
+ ***********/
+div.actions {
+	vertical-align: top;
+	float: right;
+	margin: 15px;
+}
+div.buy-btn {
+	float: right;
+	
+	border: 1px solid #333;
+	font-size: 36px;
+	padding: 5px 15px 5px 0px;
+	width: 135px;
+	text-align: right;
+	
+	background: #1240AB;
+	background: -webkit-linear-gradient(#6C8CD5 0%, #4671D5 5%, #1240AB 95%, #06266F 100%);
+	background: -moz-linear-gradient(	#6C8CD5 0%, #4671D5 5%, #1240AB 95%, #06266F 100%);
+	background: -o-linear-gradient(		#6C8CD5 0%, #4671D5 5%, #1240AB 95%, #06266F 100%);
+	background: -ms-linear-gradient(	#6C8CD5 0%, #4671D5 5%, #1240AB 95%, #06266F 100%);
+	
+	color: #fff;
+	
+	cursor: pointer;
+}
+div.buy-btn:hover {
+	box-shadow: 0px 0px 3px #1240AB;
+	
+	background: #2A4480;
+	background: -webkit-linear-gradient(#6C8CD5 0%, #4671D5 5%, #2A4480 95%, #06266F 100%);
+	background: -moz-linear-gradient(	#6C8CD5 0%, #4671D5 5%, #2A4480 95%, #06266F 100%);
+	background: -o-linear-gradient(		#6C8CD5 0%, #4671D5 5%, #2A4480 95%, #06266F 100%);
+	background: -ms-linear-gradient(	#6C8CD5 0%, #4671D5 5%, #2A4480 95%, #06266F 100%);
+}
+div.buy-btn:active {
+	box-shadow: 0px 0px 3px #06266F;
+	text-shadow: -1px -1px 0px #000;
+	
+	background: #2A4480;
+	background: -webkit-linear-gradient(#06266F 0%, #1240AB 5%, #4671D5 95%, #6C8CD5 100%);
+	background: -moz-linear-gradient(	#06266F 0%, #1240AB 5%, #4671D5 95%, #6C8CD5 100%);
+	background: -o-linear-gradient(		#06266F 0%, #1240AB 5%, #4671D5 95%, #6C8CD5 100%);
+	background: -ms-linear-gradient(	#06266F 0%, #1240AB 5%, #4671D5 95%, #6C8CD5 100%);
+}
+
+div.buy-btn.loading {
+	color: transparent;
+	background: #1240AB;
+	cursor: wait;
+	position: relative;
+}
+@keyframes rotation {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+div.buy-btn.loading::after {
+	position: absolute;
+	display: block;
+	width: 20px;
+	height: 20px;
+	left: calc(50% - 15px);
+	top: calc(50% - 15px);
+	content: ' ';
+	
+	border: 5px solid transparent;
+	border-left-color: rgba(255, 255, 255, 0.6);
+	border-radius: 30px;
+	
+	transform-origin: center center;
+	
+	animation: rotation 0.7s infinite;
+	animation-timing-function: linear;
+}
+
+div.buy-btn.disabled, div.buy-btn.disabled:hover, div.buy-btn.disabled:active {
+	border-color: #1240AB;
+	background: #f7f7f7;
+	box-shadow: none;
+	color: #333;
+	text-shadow: none;
+	cursor: default;
+}
+
+div.add-to-cart-btn {
+	float: right;
+	display: block;
+	
+	height: 55px;
+	padding-right: 40px;
+	
+	font-size: 18px;
+}
+div.add-to-cart-btn a {
+	display: block;
+	margin-top: 15px;
+}
+div.add-to-cart-btn a.success {
+	color: #070;
+	font-style: italic;
+}
+
+/**************
+ * Navigation *
+ **************/
+ 
+div.navigation {
+	width: 100%;
+	padding: 0px;
+	margin: 5px 0px;
+	text-align: center;
+}
+div.navigation a {
+	/* Nothing yet */
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+.contacts tr:first-child div {
+	font-weight: bold;
+	text-align: center;
+	
+	padding-bottom: 10px;
+	border-bottom: 2px solid #1240AB;
+	
+	color: #1240AB;
+}
+
+table.contacts {
+	width: 100%;
+	border-collapse: separate;
+	
+}
+table.contacts td {
+	padding: 4px;
+}
+
+div.contacts
+{
+	text-align:center;
+	padding-bottom:50px;
+}
+
+div#vk_groups
+{
+
+}
+#about
+{
+	text-align:left;
+}
+#VK
+{
+
+
+}
+#instagr
+{
+
+
+}
+td.contacts
+{
+	vertical-align:top;
+}

@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/****************************
+ * Cart page unique content *
+ ****************************/
+ 
+table.cart, table.cart td {
+	border-collapse: collapse;
+	border: 0px;
+}
+
+table.cart {
+	width: 90%;
+	margin: 0px 5% 10px 5%;
+}
+
+table.cart tr {
+	position: relative;
+}
+
+table.cart tr:nth-of-type(2n+1) {
+	background: #eee;
+}
+table.cart tr:hover {
+	color: #06266F;
+}
+
+table.cart tr.title {
+	position: relative;
+	font-weight: bold;
+	background: #fff;
+	text-align: center;
+	color: #06266F;
+}
+table.cart tr.title::after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background: #1240AB;
+	top: calc(100% - 1px);
+	left: 1px;
+}
+
+table.cart tr.deleted td {
+	text-decoration: line-through;
+	font-style: italic;
+	color: #777;
+}
+table.cart tr.deleted td:last-child { text-decoration: none; }
+table.cart tr.deleted td:nth-child(3) { text-decoration: none; }
+table.cart tr.deleted td:last-child a { color: #333; }
+table.cart tr.deleted td:last-child a:hover { color: #090; text-decoration: none; }
+
+table.cart tr td:only-child {
+	/* Applies when the cart is empty*/
+	text-align: center;
+	font-weight: bold;
+	padding: 30px;
+}
+
+
+@keyframes rotation {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+table.cart tr.loading td:first-child::before {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: -30px;
+	top: 5px;
+	
+	width: 20px;
+	height: 20px;
+	border: 3px solid transparent;
+	border-left-color: #1240AB;
+	border-radius: 26px;
+	
+	transform-origin: center center;
+	
+	animation: rotation 0.5s infinite;
+	animation-timing-function: linear;
+}
+
+table.cart td {
+	padding: 5px 3px;
+}
+
+/* C O L U M N S   S T Y L E S */
+
+table.cart td:nth-child(1) {
+	/* Наименование */
+	
+}
+table.cart td:nth-child(2) {
+	/* Цена */
+	text-align: right;
+}
+table.cart td:nth-child(3) {
+	/* Количество */
+	text-align: center;
+}
+table.cart td:nth-child(4) {
+	/* Стоимость */
+	text-align: right;
+}
+table.cart td:nth-child(5) {
+	/* Убрать из корзины */
+	text-align: center;
+}
+table.cart td:nth-child(5) a:hover {
+	color: #d00;
+}
+
+table.cart tr:last-child {
+	position: relative;
+	font-weight: bold;
+	background: #A0BDFE;
+	text-align: right;
+}
+table.cart tr:last-child::before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	content: ' ';
+	width: 100%;
+	height: 1px;
+	background: #1240AB;
+}
+
+/* A M O U N T   C O U N T E R */
+
+input.amount {
+	width: 30px;
+	text-align: center;
+}
+
+div.counter {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	
+	font-size: 14px;
+	font-weight: bold;
+	color: #1240AB;
+	cursor: pointer;
+}
+div.counter:hover {
+	background: #6C8CD5;
+	color: #fff;
+}
+
+tr.deleted input.amount {
+	background: #ddd;
+	border: 1px solid #777;
+	color: #777;
+}
+tr.deleted div.counter, tr.deleted div.counter:hover {
+	cursor: default;
+	background: none transparent;
+	color: #999;
+}
+
+/* O R D E R   B U T T O N */
+
+div.order-btn {
+	border: 1px solid #333;
+	font-size: 20px;
+	padding: 5px 0px;
+	margin-right: 5%; margin-left: auto;
+	width: 200px;
+	text-align: center;
+	
+	background: #1240AB;
+	background: -webkit-linear-gradient(#6C8CD5 0%, #4671D5 5%, #1240AB 95%, #06266F 100%);
+	background: -moz-linear-gradient(	#6C8CD5 0%, #4671D5 5%, #1240AB 95%, #06266F 100%);
+	background: -o-linear-gradient(		#6C8CD5 0%, #4671D5 5%, #1240AB 95%, #06266F 100%);
+	background: -ms-linear-gradient(	#6C8CD5 0%, #4671D5 5%, #1240AB 95%, #06266F 100%);
+	
+	color: #fff;
+	
+	cursor: pointer;
+}
+div.order-btn:hover {
+	box-shadow: 0px 0px 3px #1240AB;
+	
+	background: #2A4480;
+	background: -webkit-linear-gradient(#6C8CD5 0%, #4671D5 5%, #2A4480 95%, #06266F 100%);
+	background: -moz-linear-gradient(	#6C8CD5 0%, #4671D5 5%, #2A4480 95%, #06266F 100%);
+	background: -o-linear-gradient(		#6C8CD5 0%, #4671D5 5%, #2A4480 95%, #06266F 100%);
+	background: -ms-linear-gradient(	#6C8CD5 0%, #4671D5 5%, #2A4480 95%, #06266F 100%);
+}
+div.order-btn:active {
+	box-shadow: 0px 0px 3px #06266F;
+	text-shadow: -1px -1px 0px #000;
+	
+	background: #2A4480;
+	background: -webkit-linear-gradient(#06266F 0%, #1240AB 5%, #4671D5 95%, #6C8CD5 100%);
+	background: -moz-linear-gradient(	#06266F 0%, #1240AB 5%, #4671D5 95%, #6C8CD5 100%);
+	background: -o-linear-gradient(		#06266F 0%, #1240AB 5%, #4671D5 95%, #6C8CD5 100%);
+	background: -ms-linear-gradient(	#06266F 0%, #1240AB 5%, #4671D5 95%, #6C8CD5 100%);
+	
+}
+
+/**************
+ * Navigation *
+ **************/
+ 
+div.navigation {
+	width: 100%;
+	padding: 0px;
+	margin: 5px 0px;
+	text-align: center;
+}
+div.navigation a {
+	/* Nothing yet */
+}

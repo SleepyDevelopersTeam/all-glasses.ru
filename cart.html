@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Защитное стекло для телефона Sony</title>
+
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="cart.css">
+<script src="scripts/common.js"></script>
+<script src="scripts/cart.js"></script>
+
+</head>
+	
+<body>
+<div id='header'>
+		<img id ="logo" src="img/logo.png" alt="LOGO">
+			<div id="cart">
+				<img src="img/cart.png" alt="CART">
+				<span><a href="http://ya.ru">Корзина</a></span>
+			</div>
+			<div id="telephone">
+				Наш телефон: <span>+7 (987) 654-32-10</span>
+			</div>
+<ul id="menu">
+	<li><a href="#">Защитные стекла</a></li>
+	<li><a href="#">Аксессуары</a></li>
+	<li><a href="#">Контакты</a></li>
+<li><input id="search" type="text" a action="/test" method="POST" placeholder="Искать на сайте..."></li>
+</ul>
+
+</div>
+
+<div id ='content'>
+<div id='wrapper'>
+	<h2>Корзина</h2>
+	
+	<table class='cart' id='cart_table'>
+	<tr class='title'><td>Наименование</td><td>Цена</td><td>Количество</td><td>Стоимость</td><td></td></tr>
+	<tr data-product-id='1'>
+		<td>Стекло для iPhone</td>
+		<td>1490 Р</td>
+		<td>
+			<div class='counter inc'>+</div>
+			<input type='text' value='2' class='amount'>
+			<div class='counter dec'>-</div>
+		</td>
+		<td>2980 Р</td>
+		<td><a href='javascript://'>Убрать из корзины</a></td>
+	</tr>
+	<tr  data-product-id='2'>
+		<td>Стекло для Sony 7''</td>
+		<td>490 Р</td>
+		<td>
+			<div class='counter inc'>+</div>
+			<input type='text' value='2' class='amount'>
+			<div class='counter dec'>-</div>
+		</td>
+		<td>980 Р</td>
+		<td><a href='javascript://'>Убрать из корзины</a></td>
+	</tr>
+	<tr data-product-id='34' class='deleted'>
+		<td>Бутылка воды</td>
+		<td>20 Р</td>
+		<td>
+			<div class='counter inc'>+</div>
+			<input type='text' value='1' class='amount'>
+			<div class='counter dec'>-</div>
+		</td>
+		<td>20 Р</td>
+		<td><a href='javascript://'>Вернуть в корзину</a></td>
+	</tr>
+	<tr data-product-id='67'>
+		<td>Почка человеческая</td>
+		<td>200 000 Р</td>
+		<td>
+			<div class='counter inc'>+</div>
+			<input type='text' value='1' class='amount'>
+			<div class='counter dec'>-</div>
+		</td>
+		<td>200 000 Р</td>
+		<td><a href='javascript://'>Убрать из корзины</a></td>
+	</tr>
+	<tr data-product-id='129'>
+		<td>Фирменный магнитик на холодильник</td>
+		<td>0 Р</td>
+		<td>
+			<div class='counter inc'>+</div>
+			<input type='text' value='1' class='amount'>
+			<div class='counter dec'>-</div>
+		</td>
+		<td>0 Р</td>
+		<td><a href='javascript://'>Убрать из корзины</a></td>
+	</tr>
+	
+	<tr class='summ'>
+		<td>Итог:</td>
+		<td></td>
+		<td></td>
+		<td id='td_summ'>203 960 Р</td>
+		<td></td>
+	</tr>
+	
+	</table>
+	
+	<div class='order-btn'>Оформить заказ</div>
+	
+	<div class='navigation'>
+		<a href='' onclick='window.history.back();'>Вернуться к каталогу</a>
+	</div>
+</div>
+</div>
+
+<div id="line">
+	&#160;
+</div>
+<div id="footer">
+Copyright (C) 2015 <a href="http://all-glasses.ru">all-glasses.ru</a> Все права защищены.
+<p>Сайт разработан командой <a href="http://sdevteam.ru" target='_blank'>sdevteam.ru</a></p>
+</div>
+</body>
+</html>

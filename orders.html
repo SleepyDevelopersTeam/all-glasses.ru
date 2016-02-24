@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cписок заказов</title>
+	</head>
+	<body>
+		<table border="1px solid black" align="center" width=100%>
+			<thead>
+				 <p align="center">Всего открытых заказов: $count шт.</p>
+				 <tr>
+				  <th> </th>
+				  <th> Дата </th>
+				 	<th> ФИО </th>
+				 	<th> Цена </th>
+				 	<th> </th>
+				 </tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> <input type="checkbox" name="order[]" value="$order_id"></td>
+					<td> 25-09-2015 </td>
+					<td> ХУЙ ХУЙ ХУЙ </td>
+					<td> 5000 Р </td>
+					<td> Выполнить </td>
+				</tr>
+
+				<tr>
+					<td> <input type="checkbox" name="order[]" value="$order_id"></td>
+					<td> 25-09-2015 </td>
+					<td> <a href="orders.php?order_id=$order_id"> ЮРА ПИДАР МУДАК </a></td>
+					<td> 500 Р </td>
+
+					<td> <a href="ya.ru"> Выполнить </a> </td>
+				</tr>
+				<tr>
+					<td> <input type="checkbox" name="order[]" value="$order_id"></td>
+					<td> 25-09-2015 </td>
+					<td> ХУЙ ХУЙ ХУЙ </td>
+					<td> 50000 Р </td>
+					<td> Выполнить </td>
+				</tr>
+				<tr>
+					<td> <input type="checkbox" name="order[]" value="$order_id"></td>
+					<td> 25-09-2015 </td>
+					<td> ХУЙ ХУЙ ХУЙ </td>
+					<td> 1500 Р </td>
+					<td> Выполнить </td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

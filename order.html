@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Оформление заказа</title>
+
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="order.css">
+<script src="scripts/common.js"></script>
+<script src="scripts/order.js"></script>
+
+</head>
+	
+<body>
+<div id='header'>
+		<img id ="logo" src="img/logo.png" alt="LOGO">
+			<div id="cart">
+				<img src="img/cart.png" alt="CART">
+				<span><a href="http://ya.ru">Корзина</a></span>
+			</div>
+			<div id="telephone">
+				Наш телефон: <span>+7 (987) 654-32-10</span>
+			</div>
+<ul id="menu">
+	<li><a href="#">Защитные стекла</a></li>
+	<li><a href="#">Аксессуары</a></li>
+	<li><a href="#">Контакты</a></li>
+<li><input id="search" type="text" a action="/test" method="POST" placeholder="Искать на сайте..."></li>
+</ul>
+
+</div>
+
+<div id ='content'>
+<div id='wrapper'>
+	<h2>Оформление заказа</h2>
+	
+	<form method='post'>
+		<table>
+		<tr class='not-empty'>
+			<td>Ваше имя:</td>
+			<td><input name='name1' type='text' placeholder='Иванов' /></td>
+		</tr>
+		
+		<tr class='not-empty'>
+			<td>Ваша фамилия:</td>
+			<td><input name='name2' type='text' placeholder='Иван' /></td>
+		</tr>
+		
+		<tr>
+		<td>Ваше отчество:</td>
+		<td><input name='name3' type='text' placeholder='Иванович' /></td>
+		</tr>
+		
+		<tr class='not-empty'>
+			<td>Станция метро:</td>
+			<td>
+			<select name='subway'>
+			<optgroup label='Сокольническая линия' class='red'>
+				<option name='Улица Подбельского'>Улица Подбельского</option>
+				<option name='Черкизовская'>Черкизовская</option>
+				<option name='Преображенская площадь'>Преображенская площадь</option>
+				<option name='Сокольники'>Сокольники</option>
+				<option name='Красносельская'>Красносельская</option>
+				<option name='Комсомольская'>Комсомольская</option>
+				<option name='Красные ворота'>Красные ворота</option>
+				<option name='Чистые пруды'>Чистые пруды</option>
+				<option name='Лубянка'>Лубянка</option>
+				<option name='Охотный ряд'>Охотный ряд</option>
+				<option name='Библиотека имени Ленина'>Библиотека имени Ленина</option>
+				<option name='Кропоткинская'>Кропоткинская</option>
+				<option name='Парк культуры'>Парк культуры</option>
+				<option name='Фрунзенская'>Фрунзенская</option>
+				<option name='Спортивная'>Спортивная</option>
+				<option name='Воробьевы горы'>Воробьевы горы</option>
+				<option name='Университет'>Университет</option>
+				<option name='Проспект Вернадского'>Проспект Вернадского</option>
+				<option name='Юго-Западная'>Юго-Западная</option>
+				
+			</optgroup>
+			<optgroup label='Замоскворецкая линия' class='green'>
+				
+				<option name='Речной вокзал'>Речной вокзал</option>
+				<option name='Водный стадион'>Водный стадион</option>
+				<option name='Войковская'>Войковская</option>
+				<option name='Сокол'>Сокол</option>
+				<option name='Аэропорт'>Аэропорт</option>
+				<option name='Динамо'>Динамо</option>
+				<option name='Белорусская'>Белорусская</option>
+				<option name='Маяковская'>Маяковская</option>
+				<option name='Тверская'>Тверская</option>
+				<option name='Театральная'>Театральная</option>
+				<option name='Новокузнецкая'>Новокузнецкая</option>
+				<option name='Павелецкая'>Павелецкая</option>
+				<option name='Автозаводская'>Автозаводская</option>
+				<option name='Коломенская'>Коломенская</option>
+				<option name='Каширская'>Каширская</option>
+				<option name='Кантемировская'>Кантемировская</option>
+				<option name='Царицино'>Царицино</option>
+				<option name='Орехово'>Орехово</option>
+				<option name='Домодедовская'>Домодедовская</option>
+				<option name='Красногвардейская'>Красногвардейская</option>
+				
+			</optgroup>
+			<optgroup label='Каховская линия' class='cyan'>
+				
+				<option name='Каховская'>Каховская</option>
+				<option name='Варшавская'>Варшавская</option>
+				<option name='Каширская'>Каширская</option>
+				
+			</optgroup>
+			<optgroup label='Арбатско-Покровская линия' class='blue'>
+				
+				<option name='Парк победы'>Парк победы</option>
+				<option name='Киевская'>Киевская</option>
+				<option name='Смоленская'>Смоленская</option>
+				<option name='Арбатская'>Арбатская</option>
+				<option name='Площадь революции'>Площадь революции</option>
+				<option name='Курская'>Курская</option>
+				<option name='Бауманская'>Бауманская</option>
+				<option name='Электрозаводская'>Электрозаводская</option>
+				<option name='Семеновская'>Семеновская</option>
+				<option name='Партизанская (Измайловский парк)'>Партизанская (Измайловский парк)</option>
+				<option name='Измайловская'>Измайловская</option>
+				<option name='Первомайская'>Первомайская</option>
+				<option name='Щелковская'>Щелковская</option>
+				
+			</optgroup>
+			<optgroup label='Филевская линия' class='lblue'>
+				
+				<option name='Крылатское'>Крылатское</option>
+				<option name='Молодежная'>Молодежная</option>
+				<option name='Кунцевская'>Кунцевская</option>
+				<option name='Пионерская'>Пионерская</option>
+				<option name='Филевский парк'>Филевский парк</option>
+				<option name='Багратионовская'>Багратионовская</option>
+				<option name='Фили'>Фили</option>
+				<option name='Кутузовская'>Кутузовская</option>
+				<option name='Студенческая'>Студенческая</option>
+				<option name='Международная'>Международная</option>
+				<option name='Деловой центр'>Деловой центр</option>
+				<option name='Киевская'>Киевская</option>
+				<option name='Смоленская'>Смоленская</option>
+				<option name='Арбатская'>Арбатская</option>
+				<option name='Александровский сад'>Александровский сад</option>
+				
+			</optgroup>
+			<optgroup label='Кольцевая линия' class='brown'>
+				
+				<option name='Белорусская'>Белорусская</option>
+				<option name='Новослободская'>Новослободская</option>
+				<option name='Проспект мира'>Проспект мира</option>
+				<option name='Комсомольская'>Комсомольская</option>
+				<option name='Курская'>Курская</option>
+				<option name='Таганская'>Таганская</option>
+				<option name='Павелецкая'>Павелецкая</option>
+				<option name='Добрынинская'>Добрынинская</option>
+				<option name='Октябрьская'>Октябрьская</option>
+				<option name='Парк культуры'>Парк культуры</option>
+				<option name='Киевская'>Киевская</option>
+				<option name='Краснопресненская'>Краснопресненская</option>
+				
+			</optgroup>
+			<optgroup label='Калужско-Рижская линия' class='orange'>
+				
+				<option name='Медведково'>Медведково</option>
+				<option name='Бабушкинская'>Бабушкинская</option>
+				<option name='Свиблово'>Свиблово</option>
+				<option name='Ботанический сад'>Ботанический сад</option>
+				<option name='ВДНХ'>ВДНХ</option>
+				<option name='Алексеевская'>Алексеевская</option>
+				<option name='Рижская'>Рижская</option>
+				<option name='Проспект мира'>Проспект мира</option>
+				<option name='Сухаревская'>Сухаревская</option>
+				<option name='Тургеневская'>Тургеневская</option>
+				<option name='Китай-город'>Китай-город</option>
+				<option name='Третьековская'>Третьековская</option>
+				<option name='Октябрьская'>Октябрьская</option>
+				<option name='Шабловская'>Шабловская</option>
+				<option name='Ленинский проспект'>Ленинский проспект</option>
+				<option name='Академическая'>Академическая</option>
+				<option name='Профсоюзная'>Профсоюзная</option>
+				<option name='Новые черемушки'>Новые черемушки</option>
+				<option name='Калужская'>Калужская</option>
+				<option name='Беляево'>Беляево</option>
+				<option name='Коньково'>Коньково</option>
+				<option name='Теплый стан'>Теплый стан</option>
+				<option name='Ясенево'>Ясенево</option>
+				<option name='Битцевский парк'>Битцевский парк</option>
+				
+			</optgroup>
+			<optgroup label='Таганско-Краснопресненская линия' class='purple'>
+				
+				<option name='Планерная'>Планерная</option>
+				<option name='Сходненская'>Сходненская</option>
+				<option name='Тушинская'>Тушинская</option>
+				<option name='Щукинская'>Щукинская</option>
+				<option name='Октябрьское поле'>Октябрьское поле</option>
+				<option name='Полежаевская'>Полежаевская</option>
+				<option name='Беговая'>Беговая</option>
+				<option name='Улица 1905 года'>Улица 1905 года</option>
+				<option name='Баррикадная'>Баррикадная</option>
+				<option name='Пушкинская'>Пушкинская</option>
+				<option name='Кузнецкий мост'>Кузнецкий мост</option>
+				<option name='Китай-город'>Китай-город</option>
+				<option name='Таганская'>Таганская</option>
+				<option name='Пролетарская'>Пролетарская</option>
+				<option name='Волгоградский проспент'>Волгоградский проспент</option>
+				<option name='Текстильщики'>Текстильщики</option>
+				<option name='Кузьминки'>Кузьминки</option>
+				<option name='Рязанский проспект'>Рязанский проспект</option>
+				<option name='Выхино'>Выхино</option>
+				
+			</optgroup>
+			<optgroup label='Калининская линия' class='yellow'>
+				
+				<option name='Третьяковская'>Третьяковская</option>
+				<option name='Марксистская'>Марксистская</option>
+				<option name='Площадь Ильича'>Площадь Ильича</option>
+				<option name='Авиамоторная'>Авиамоторная</option>
+				<option name='Шоссе Энтузиастов'>Шоссе Энтузиастов</option>
+				<option name='Перово'>Перово</option>
+				<option name='Новогиреево'>Новогиреево</option>
+				
+			</optgroup>
+			<optgroup label='Серпуховско-Тимирязевская линия' class='gray'>
+				
+				<option name='Алтуфьево'>Алтуфьево</option>
+				<option name='Бибирево'>Бибирево</option>
+				<option name='Отрадное'>Отрадное</option>
+				<option name='Владыкино'>Владыкино</option>
+				<option name='Петровско-Разумовская'>Петровско-Разумовская</option>
+				<option name='Тимирязевская'>Тимирязевская</option>
+				<option name='Дмитровская'>Дмитровская</option>
+				<option name='Савеловская'>Савеловская</option>
+				<option name='Менделеевская'>Менделеевская</option>
+				<option name='Цветной бульвар'>Цветной бульвар</option>
+				<option name='Чеховская'>Чеховская</option>
+				<option name='Боровицкая'>Боровицкая</option>
+				<option name='Полянка'>Полянка</option>
+				<option name='Серпуховская'>Серпуховская</option>
+				<option name='Тульская'>Тульская</option>
+				<option name='Нагатинская'>Нагатинская</option>
+				<option name='Нагорная'>Нагорная</option>
+				<option name='Нахимовский проспект'>Нахимовский проспект</option>
+				<option name='Севастопольская'>Севастопольская</option>
+				<option name='Чертановская'>Чертановская</option>
+				<option name='Южная'>Южная</option>
+				<option name='Пражская'>Пражская</option>
+				<option name='Улица Академика Янгеля'>Улица Академика Янгеля</option>
+				<option name='Аннино'>Аннино</option>
+				<option name='Бульвар Дмитрия Донского'>Бульвар Дмитрия Донского</option>
+				
+			</optgroup>
+			<optgroup label='Люблинская линия' class='lime'>
+				
+				<option name='Трубная'>Трубная</option>
+				<option name='Чкаловская'>Чкаловская</option>
+				<option name='Римская'>Римская</option>
+				<option name='Крестьянская застава'>Крестьянская застава</option>
+				<option name='Дубровка'>Дубровка</option>
+				<option name='Кожуховская'>Кожуховская</option>
+				<option name='Печатники'>Печатники</option>
+				<option name='Волжская'>Волжская</option>
+				<option name='Люблино'>Люблино</option>
+				<option name='Братиславская'>Братиславская</option>
+				<option name='Марьино'>Марьино</option>
+				
+			</optgroup>
+			<optgroup label='Бутовская линия' class='llblue'>
+				
+				<option name='Улица Старокачаловская'>Улица Старокачаловская</option>
+				<option name='Улица Скобелевская'>Улица Скобелевская</option>
+				<option name='Бульвар Адмирала Ушакова'>Бульвар Адмирала Ушакова</option>
+				<option name='Улица Горчакова'>Улица Горчакова</option>
+				<option name='Бунинская Аллея '>Бунинская Аллея </option>
+				
+			</optgroup>
+			<optgroup label='Монорельс' class='blue'>
+				
+				<option name='Тимирязевская'>Тимирязевская</option>
+				<option name='Ул. Милашенкова'>Ул. Милашенкова</option>
+				<option name='Телецентр'>Телецентр</option>
+				<option name='Ул. академика Королева'>Ул. академика Королева</option>
+				<option name='Выставочный центр'>Выставочный центр</option>
+				<option name='Улица Сергея Эйзенштейна'>Улица Сергея Эйзенштейна</option>
+				
+			</optgroup>
+			</select>
+			<p class='info'>Внимание! Доставка осуществляется только до станции метро.</p>
+			</td>
+		</tr>
+		
+		 <tr class='not-empty'>
+			 <td>Ваш телефон:</td>
+			 <td><input name='tel' type='tel' placeholder='+7(987)-654-32-10' /></td>
+		 </tr>
+		 
+		 <tr>
+			 <td>Ваш e-mail:</td>
+			 <td><input name='mail' type='email' placeholder='name@server.ru' /></td>
+		 </tr>
+		 
+		 <tr>
+		 	<td>Дополнительно:</td>
+		 	<td><textarea name='note' placeholder='Укажите здесь дополнительные сведения, которые вы считаете необходимым сообщить'></textarea></td>
+		</tr>
+		
+		<tr class='info'>
+			<td>Информация о заказе:</td>
+			<td>Всего товаров: <b>7</b>, общая сумма: <b>203 960 Р</b>. Расчёт осуществляется наличными.</td>
+		</tr>
+		
+		</table>
+		<div class='actions'>
+			<div class='clear-btn' id='clear_btn'>Сбросить</div>
+			<div class='order-btn' id='order_btn'>Готово</div>
+		</div>
+	</form>
+	<div class='navigation'>
+		<a href='' onclick='window.history.back();'>Вернуться в корзину</a>
+	</div>
+</div>
+</div>
+
+<div id="line">
+	&#160;
+</div>
+<div id="footer">
+Copyright (C) 2015 <a href="http://all-glasses.ru">all-glasses.ru</a> Все права защищены.
+<p>Сайт разработан командой <a href="http://sdevteam.ru" target='_blank'>sdevteam.ru</a></p>
+</div>
+</body>
+</html>
